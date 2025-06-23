@@ -19,14 +19,14 @@
 
 MUTATIONS=('VAL65MET')
 LIGAND_NAME=Fv
-PROTEIN_FILE='/home/lauj2/data/projects/HER2/18NZ_EC_IV_colabfold_fixed_cap.pdb'
-LIGAND_FILE='/home/lauj2/data/projects/HER2/1N8Z_AB_scFv_capped.pdb'
+PROTEIN_FILE='../18NZ_EC_IV_colabfold_fixed_cap.pdb'
+LIGAND_FILE='../1N8Z_AB_scFv_capped.pdb'
 
 i=$(expr $LSB_JOBINDEX-1)
 
 source ~/.bashrc
 module load cuda/10.2
-conda activate /home/lauj2/miniconda3/envs/perses
+conda activate perses
 
 echo "Processing index $LSB_JOBINDEX"
 # echo "Processing i index $LSB_JOBINDEX-1"

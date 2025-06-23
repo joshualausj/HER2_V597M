@@ -25,7 +25,7 @@ LIGAND=Fv
 PHASE=complex
 MUTATION=PHE63SER
 
-source activate /home/lauj2/miniconda3/envs/perses
+source activate perses
 
 python scripts/run_neq_complex.py -i htfs/${LIGAND}/${MUTATION} -o neqs/${LIGAND}/${MUTATION} -p ${PHASE} -c $LSB_JOBINDEX
 
