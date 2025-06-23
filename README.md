@@ -6,20 +6,19 @@ This repository contains the environment configuration, code, and instructions t
 
 To reproduce this analysis
 
-1. Clone this repository
+1. **Clone this repository**
 
 ```bash
 git clone https://github.com/joshualausj/HER2_V597M/
 cd HER2_V597M
 ```
 
-2. Create conda environment
+2. **Create conda environment**
 ```bash
 conda env create -f environment.yml
 conda activate perses
 ```
-3. Generate HybridTopologyFactory (HTF) objects
-
+3. **Generate HybridTopologyFactory (HTF) objects**
 ```bash
 cd fec
 bsub -J "htfs[1]" < submit_htfs_HER2ecIV.sh
@@ -29,16 +28,15 @@ Our system uses LSF. Please reconfigure this and subsequent scripts / commands t
 This should create a directory ```htfs``` which includes the solvated apo and complexed, mutant and wildtype pdb structures, using the input .pdb structures.
 Please note that V597 is indexed as V65 as we use a .pdb file containing only extracellular domain IV of HER2. 
 
-4. neq calculations
+4. **neq calculations**
 
-This step runs non-equilibrium cycling simulations with 100 replicates. 
+This step runs non-equilibrium cycling simulations with 100 replicates, outputting into a folder ```neqs``` 
 
-100 replicates 
 
 ```bash
 ./submit_all_neqs_round2.sh
 ```
-5. final analysis
+5. **final analysis**
 
 This step plots and outputs the work distributions, trajectories, and relative free energy. 
 
