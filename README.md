@@ -38,7 +38,7 @@ This step runs non-equilibrium cycling simulations with 100 replicates, outputti
 ```
 5. **final analysis**
 
-This step plots and outputs the work distributions, trajectories, and relative free energy. 
+This step plots and outputs the work distributions, trajectories, and relative free energy into a directory ```analysis```. the analysis output for the results described in the manuscript are included as a reference in ```fec/analysis_reference```
 
 ```bash
 bsub -J "analysis[1]" < submit-analysis-neq.sh
