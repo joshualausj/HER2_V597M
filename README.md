@@ -7,9 +7,10 @@ This repository contains the environment configuration, code, and instructions t
 To reproduce this analysis
 
 0. **Pre-requisites**
+   
 To run this analysis an OpenEye software license must be attained and added to your PATH. Please follow instructions here https://docs.eyesopen.com/applications/common/license.html
 
-1. **Clone this repository**
+2. **Clone this repository**
 
 ```bash
 git clone https://github.com/joshualausj/HER2_V597M/
