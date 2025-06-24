@@ -23,7 +23,7 @@
 
 LIGAND=Fv
 PHASE=complex
-MUTATION=PHE63SER
+MUTATION=VAL65MET
 
 source activate perses
 

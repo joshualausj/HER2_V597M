@@ -27,5 +27,5 @@ module load cuda/10.2
 conda activate perses
 
 i=$(expr $LSB_JOBINDEX - 1)
-python scripts/analyze_neq.py -i neqs/${LIGAND_NAME}/${MUTATIONS[i]}/ -d "met ${LIGAND_NAME} ${MUTATIONS[i]}"
+python scripts/analyze_neq.py -i neqs/${LIGAND_NAME}/${MUTATIONS[i]}/ -o ./analysis/ -d "met ${LIGAND_NAME} ${MUTATIONS[i]}"
 

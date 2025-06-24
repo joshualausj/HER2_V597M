@@ -1,0 +1,8 @@
+#ignore output directories
+htfs/
+neqs/
+analysis/
+
+#ignore log
+*.log
+
