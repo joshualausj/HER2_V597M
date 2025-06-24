@@ -1,4 +1,4 @@
-# Code for predicted relative binding free energy calculations
+# Free energy calculations for HER2 V597M mutation with Trastuzumab
 
 This repository contains the environment configuration, code, and instructions to reproduce the alchemical free energy calculations used to predict the relative binding free energy change of the HER2 V597M mutation to Trastuzumab. 
 
